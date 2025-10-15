@@ -50,6 +50,7 @@ final class KafkaConsumer implements MessageConsumer {
     }
 }
 
+// Реализация протокола отправки сообщения семейства RabbitMQ
 final class RabbitProducer implements MessageProducer {
     @Override
     public void send(String topic, String payload) {
